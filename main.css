@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+
+body {
+    font-family: Dokdo;
+    color: #e50666;
+    background-color: #f2d208;
+}
+.picture-class {
+    height: auto;
+    max-width: 50%;
+}
