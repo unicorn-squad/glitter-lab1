@@ -1,2 +1,2 @@
-# glitter-lab1
-About us
+# About Us
+Magical things about us.
