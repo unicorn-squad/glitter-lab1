@@ -1,2 +1,2 @@
 # About Us
-Magical things about us.
+Magical things about us!
