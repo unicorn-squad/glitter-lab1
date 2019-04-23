@@ -1,8 +1,16 @@
 const test = QUnit.test;
 function scoreResult(questionOne, questionTwo, questionThree, questionFour, questionFive) {
+    
+    questionOne = questionOne.toLowerCase();
+    questionTwo = questionTwo.toLowerCase();
+    questionThree = questionThree.toLowerCase();
+    questionFour = questionFour.toLowerCase();
+    questionFive = questionFive.toLowerCase();
+    
     let score = 0;   
 
-    if(questionOne === 'night') {
+
+    if(questionOne === 'night' || questionOne === 'at night') {
         score += 1;
     }
 
@@ -10,7 +18,7 @@ function scoreResult(questionOne, questionTwo, questionThree, questionFour, ques
         score += 1;
     }
 
-    if(questionThree === 'one') {
+    if(questionThree === 'one' || questionThree === '1') {
         score += 1;
     }
 
@@ -21,13 +29,6 @@ function scoreResult(questionOne, questionTwo, questionThree, questionFour, ques
     if(questionFive === 'a lot') {
         score += 1;
     }
-
-   
-// questionOne = questionOne.toLowerCase();
-   // questionTwo = questionTwo.toLowerCase();
-   // questionThree = questionThree.toLowerCase();
-   // questionFour = questionFour.toLowerCase();
-   // questionFive = questionFive.toLowerCase();
 
    return score;
 
@@ -61,6 +62,21 @@ test('all answers right', (assert) => {
     const questionFour = 'fruit';
     const questionFive = 'a lot';
     const expected = 5;
+    //Act
+    const result = scoreResult(questionOne, questionTwo, questionThree, questionFour, questionFive);
+    //Assert
+    assert.equal(result, expected);
+});
+
+test('does lowercase work correctly', (assert) => {
+    //Arrange
+    const questionOne = 'NIght';
+    const questionTwo = 'rainbOWs';
+    const questionThree = 'oNe';
+    const questionFour = 'FRuit';
+    const questionFive = 'a lOt';
+    const expected = 5;
+
     //Act
     const result = scoreResult(questionOne, questionTwo, questionThree, questionFour, questionFive);
     //Assert
