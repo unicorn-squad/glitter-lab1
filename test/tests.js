@@ -1,6 +1,6 @@
 const test = QUnit.test;
 
-import scoreResult from '../src/index.js';
+import scoreResult from '../src/score-result.js';
 
 
 
