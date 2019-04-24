@@ -29,8 +29,7 @@ function scoreResult(questionOne, questionTwo, questionThree, questionFour, ques
     if(questionFive === 'a lot') {
         score += 1;
     }
-
-   return score;
+    return score;
 
 }
 export default scoreResult;
