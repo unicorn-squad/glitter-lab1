@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+
+body {
+    font-family: Dokdo;
+    color: #e50666;
+    background-color: #f2d208;
+}
+.picture-class {
+    height: auto;
+    max-width: 50%;
+}
+
+h1, h2, h3 {
+    color: #A100CD;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 3px hotpink solid;
+    height: 30px;
+    width: 300px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #A100CD;
+    color: white;
+    font-family: Dokdo;
+    font-size: 1.2em;
+    height: 30px;
+    width: 150px;
+}
+
+#quiz-results {
+    font-size: 2em;
+}
